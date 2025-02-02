@@ -1,0 +1,15 @@
+/* Custom CSS for the clip-path */
+.pentagon {
+    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  }
+  
+.tets{
+    color: #00000062;
+}
+.avatar-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+.custom-hide{
+    display: none;
+}
