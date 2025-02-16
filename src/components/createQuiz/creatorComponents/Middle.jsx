@@ -27,13 +27,11 @@ const Middle = ({ register }) => {
 
   useEffect(() => {
     setSaveQuestion({
+      userId:"user123",
       question: questionText,
-      op1: optionText1,
-      op2: optionText2,
-      op3: optionText3,
-      op4: optionText4,
+      options: [optionText1,optionText2,optionText3,optionText4],
       correctAnswer: 0,
-      questionType: 'mcq',
+      questionType: selectedQuestionType,
     });
   }, [questionText, optionText1, optionText2, optionText3, optionText4]);
 

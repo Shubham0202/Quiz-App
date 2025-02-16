@@ -23,15 +23,14 @@ const Aside = () => {
     function activeQuestionTypeComponent() {
         setIsQuestionTYpesActive(true);
         //when button is clicked then saveQuestion set into question list
-        if (questionText.length > 0) {
-            setQuestionsList([...questionsList, saveQuestion])
-            setQuestionText('');
-            setOptionText1('');
-            setOptionText2('');
-            setOptionText3('');
-            setOptionText4('');
+        // if (questionText.length > 0) {
+        //     setQuestionText('');
+        //     setOptionText1('');
+        //     setOptionText2('');
+        //     setOptionText3('');
+        //     setOptionText4('');
 
-        }
+        // }
     }
     return (
         <div className='hidden sm:block h-full bg-white p-2'>

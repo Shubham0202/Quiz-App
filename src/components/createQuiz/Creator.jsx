@@ -16,9 +16,10 @@ const Creator = () => {
   const {
     saveQuestion,
   } = useContext(context);
-  const { postData, error, status } = useSendQuizQuestions('http://localhost:3000/submit');
+  const { postData, error, status } = useSendQuizQuestions('http://localhost:3000/addUserQuiz');
 
   function onSubmit(fdata) {
+    console.log(saveQuestion.options.filter(item=>item!==''));
     postData({ data: saveQuestion });
     console.log(fdata);
   }

@@ -10,13 +10,17 @@ import Instructions from './components/player/Instructions'
 import Creator from './components/createQuiz/Creator'
 import CreatorLayout from './components/createQuiz/CreatorLayout'
 import Settings from './components/createQuiz/creatorComponents/navbarComponents/Settings'
+import SignupForm from './components/auth/SignupForm'
+import LoginForm from './components/auth/LoginForm'
 function App() {
 
   return (
     <QuizContextProvider>
-      <div className='bg-black'>
+      <div className=''> {/* bg-black */}
         <Router>
           <Routes>
+            <Route path='/login' element={<LoginForm/>}/>
+            <Route path='/signup' element={<SignupForm/>}/>
             <Route path="/" element={<StartGame />} />
             <Route path="/join" element={<StartGame placeholderName='Nickname..' buttonName='Go!' redirectionLink='/instructions' />} />
             <Route path="/instructions" element={<Instructions placeholderName='Nickname..' buttonName='Go!' redirectionLink='/instructions' />} />
